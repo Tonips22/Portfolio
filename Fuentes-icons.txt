@@ -1,0 +1,30 @@
+Fontts:
+- Onest
+- Monserrat
+- REM
+- Unbounded
+
+Icons:
+- Flaticon
+- Font awesome
+- Google icons
+
+
+typing library:
+- Typelt
+- Mattboldt
+
+Colors Palette:
+Modo Oscuro
+- Fondo: #1E1E1E (Negro suave)
+- Texto Principal: #FFFFFF (Blanco)
+- Resaltado: #3D5AFE (Azul vívido)
+- Acento: #FFD600 (Amarillo brillante)
+- Enlace: #64FFDA (Turquesa neón)
+
+Modo Claro
+- Fondo: #FFFFFF (Blanco)
+- Texto Principal: #333333 (Gris oscuro)
+- Resaltado: #6200EA (Púrpura)
+- Acento: #FFAB00 (Naranja brillante)
+- Enlace: #2962FF (Azul claro)
