@@ -1,0 +1,150 @@
+<header>
+
+    <nav class="navigation">
+        <a href="">Proyects</a>
+        <a href="">Skills</a>
+        <a href="">About Me</a>
+        <div class="languages">
+            <a class="main-language" href="">
+                <img src="./public/bandera-espana.svg" alt="">
+                Español
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <a class="second-language" href="">
+                <img src="./public/bandera-reino.svg" alt="">
+                English
+            </a>
+        </div>
+    </nav>
+
+    <a class="CV" target="_blank" href="./public/CurriculumAGT.pdf">Download CV</a>
+
+</header>
+
+<style>
+    header{
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+
+        animation: fade-in-up 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fade-in-up{
+        from{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (width <= 768px) {
+        header{
+            display: none;
+        }
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        a{
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 5px;
+
+            transition: color ease .3s, background-color ease-in-out .3s;
+        }
+        a:hover{
+            color: var(--dark);
+            background-color: var(--white);
+        }
+    }
+
+    .languages{
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .main-language, .second-language{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5px;
+
+        background-color: #ffffff20;
+        backdrop-filter: blur(5px);
+
+        img{
+            max-width: 20px;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        i{
+            font-size: 10px;
+        }
+    }
+
+    .main-language:hover{
+        .fa-chevron-down{
+            rotate: 180deg;
+        }
+    }
+
+    .fa-chevron-down{
+        transition: rotate ease .3s;
+    }
+
+    .second-language{
+
+        display: none;
+
+        position: absolute;
+        bottom: calc(-100% - 10px);
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .CV{
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: var(--dark);
+        background-color: var(--white);
+
+        transition: background-color .3s ease;
+
+        &:hover{
+            background-color: var(--tertiary);
+        }
+    }
+</style>
