@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.4"
+    "@fontsource-variable/montserrat": "^5.0.17",
+    "@fontsource-variable/unbounded": "^5.0.18",
+    "astro": "^4.4.4",
+    "typed.js": "^2.1.0"
   }
 }
