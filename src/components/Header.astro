@@ -1,7 +1,6 @@
 <header>
-
     <nav class="navigation">
-        <a href="">Proyects</a>
+        <a href="#projects">Proyects</a>
         <a href="">Skills</a>
         <a href="">About Me</a>
         <div class="languages">
@@ -35,6 +34,23 @@
         padding: 20px;
 
         animation: fade-in-up 0.5s ease-in-out forwards;
+
+        z-index: 999;
+
+        animation: scroll-blur ease-in-out both;
+        animation-timeline: scroll();
+        animation-range: entry 50px cover 100px;
+    }
+
+    @keyframes scroll-blur{
+        from{
+            backdrop-filter: none;
+        }
+
+        to{
+            backdrop-filter: blur(15px);
+            background-color: #0000003c;
+        }
     }
 
     @keyframes fade-in-up{
@@ -133,6 +149,20 @@
         left: 0;
         width: 100%;
         height: 100%;
+
+        animation: fade-in-down ease .3s both;
+    }
+
+    @keyframes fade-in-down{
+        from{
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .CV{
@@ -148,3 +178,16 @@
         }
     }
 </style>
+
+<script>
+    const languages = document.querySelector(".languages");
+    const secondLanguage = document.querySelector(".second-language");
+
+    languages.addEventListener("mouseenter", ()=>{
+        (secondLanguage as HTMLElement).style.display = "flex";
+    })
+
+    languages.addEventListener("mouseleave", ()=>{
+        (secondLanguage as HTMLElement).style.display = "none";
+    })
+</script>
