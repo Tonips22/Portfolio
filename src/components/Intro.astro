@@ -1,0 +1,156 @@
+---
+
+---
+
+<section class="container">
+    <div class="info">
+        <h1>Hi! I'm <span id="text">Antonio</span></h1>
+        <h2><span>Software engineer</span> specialized in <span>web apps</span> and <span>web desing</span> Software engineer specialized in web apps and web desing</h2>
+        
+        <div class="social-media">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a class="contact" href="">
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <img class="logo" src="./image0.jpeg" alt="Personal logo">
+</section>
+
+<style>
+    section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        min-height: 100vh;
+        width: auto;
+
+        gap: 20px;
+    }
+
+    @media (width <= 768px) {
+        section{
+            flex-direction: column;
+        }
+
+        .info{
+            order: 2;
+        }
+    }
+
+    .info{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+        gap: 20px;
+
+
+        h1{
+            font-family: var(--primaryFont);
+
+            font-size: 5rem;
+
+            span{
+                color: var(--primary);
+                min-height: 182px;
+            }
+        }
+
+        h2{
+            font-size: 20px;
+
+            span{
+                color: var(--secondary);
+            }
+        }
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+
+
+        a{
+            text-decoration: none;
+            color: var(--tertiary);
+            font-size: 38.4px;
+
+            transition: color ease .3s;
+
+            &:hover{
+                color: var(--secondary);
+            }
+        }
+
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            padding: 10px 20px;
+            background-color: var(--white);
+            color: var(--dark);
+            border-radius: 5px;
+            
+            font-size: 1rem;
+
+
+            transition: all ease .3s;
+        }
+
+        .contact:hover{
+            background-color: var(--tertiary);
+            color: var(--dark);
+            
+            .fa-arrow-right{
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .fa-arrow-right{
+        transition: all ease .3s;
+    }
+
+    .logo{
+        aspect-ratio: 1/1;
+        max-width: 500px;
+        height: auto;
+        /* border-radius: 75% 25% 75% 25% / 25% 75% 25% 75%; */
+        /* border-radius: 48% 52% 52% 48% / 25% 43% 57% 75%; */
+        /* border-radius: 48% 52% 52% 48% / 64% 43% 57% 36%; */
+        /* border-radius: 48% 52% 52% 48% / 69% 31% 69% 31%; */
+        border-radius: 41% 30% 41% 30% / 69% 31% 69% 31%;
+
+        box-shadow: 3px 3px 10px 3px #000;
+        object-fit: cover;
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/ebd46689b1.js" crossorigin="anonymous"></script>
+
+<script>
+    import Typed from 'typed.js';
+
+    const typed = new Typed('#text', {
+    strings: ['Toni','Software engineer', 'Web Developer', 'Web Designer'],
+    typeSpeed: 60,
+    startDelay: 500,
+    backSpeed: 30
+});
+</script>
