@@ -1,0 +1,203 @@
+---
+
+---
+
+<section class="projects container" id="projects">
+    <article class="project">
+        <img src="./screenshot-nothing.png" alt="Nothing Project picture">
+
+        <div class="info">
+            <h1>Nothing-Phone Redesign</h1>
+
+            <p>Personal project on the redesign of the Nothing Phone 2 main page.</p>
+
+            <div class="technologies">
+                <span><i class="astro fa-solid fa-user-astronaut"></i>Astro</span>
+                <span><i class="html fa-brands fa-html5"></i>HTML5</span>
+                <span><i class="css fa-brands fa-css3"></i>CSS</span>
+                <span><i class="js fa-brands fa-js"></i>JavaScript</span>
+            </div>
+
+            <a target="_blank" href="https://nothing-phone-2.vercel.app/">Visit Website</a>
+        </div>
+    </article>
+
+    <article class="project">
+        <img src="./screenshot-irecipe.png" alt="iRecipe screenshot picture">
+
+        <div class="info">
+            <h1>iRecipe</h1>
+
+            <p>Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.</p>
+
+            <div class="technologies">
+                <span><i class="html fa-brands fa-html5"></i>HTML5</span>
+                <span><i class="css fa-brands fa-css3"></i>CSS</span>
+                <span><i class="js fa-brands fa-js"></i>JavaScript</span>
+                <span><i class="php fa-brands fa-php"></i>PHP</span>
+                <span><i class="laravel fa-brands fa-laravel"></i>Laravel</span>
+            </div>
+
+            <a target="_blank" href="https://irecipe.000webhostapp.com/">Visit Website</a>
+        </div>
+    </article>
+
+    <article class="project">
+        <img src="./screenshot-weekly.png" alt="Weekly Gallery screenshot">
+
+        <div class="info">
+            <h1>Weekly Gallery</h1>
+
+            <p>Simple Gallery page using HMTL CSS & JS inefine fioenfoen foeofneongfo fonefonengfoe oenfonfeonf</p>
+
+            <div class="technologies">
+                <span><i class="html fa-brands fa-html5"></i>HTML5</span>
+                <span><i class="css fa-brands fa-css3"></i>CSS</span>
+                <span><i class="js fa-brands fa-js"></i>JavaScript</span>
+            </div>
+
+            <a target="_blank" href="https://tonips22.github.io/WeeklyGallery/">Visit Website</a>
+        </div>
+    </article>
+</section>
+
+<style>
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        min-height: 100vh;
+    }
+
+    @media (width <= 768px) {
+        .projects{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .project{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        gap: 20px;
+
+        background-color: #ffffff20;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+
+        img{
+            max-width: 50%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            
+        }
+    }
+
+    @media (width <= 768px) {
+        .project{
+            flex-direction: column;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 20px;
+        padding-right: 20px;
+
+        h1{
+            color: var(--primary);
+            font-family: var(--primaryFont);
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        a{
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: var(--dark);
+            background-color: var(--white);
+
+            transition: background-color ease .3s;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+
+            &:hover{
+                background-color: var(--tertiary);
+            }
+        }
+    }
+
+    .technologies{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        span{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+
+            /* border: 1px solid var(--white); */
+            color: var(--white);
+            background-color: #1e1e1e80;
+            padding: 5px 10px;
+            border-radius: 5rem;
+
+            font-size: 12px;
+
+            cursor: default;
+        }
+    }
+</style>
+
+<style is:global>
+    .html{
+        color: orange;
+    }
+
+    .css{
+        color: var(--primary);
+    }
+
+    .js{
+        color: yellow;
+    }
+
+    .astro{
+        color: darkorange;
+    }
+
+    .php{
+        color: plum;
+    }
+
+    .laravel{
+        color: crimson;
+    }
+
+
+</style>
+
+<script src="https://kit.fontawesome.com/ebd46689b1.js" crossorigin="anonymous"></script>
