@@ -38,9 +38,6 @@ import Arrow from "../components/Arrow.astro";
         width: 100%;
         margin: 0 auto;
         padding: 20px;
-
-        animation: fade-in-up 0.5s ease-in-out forwards;
-
         z-index: 999;
 
         animation: scroll-blur ease-in-out both;
@@ -91,12 +88,15 @@ import Arrow from "../components/Arrow.astro";
         justify-content: center;
         gap: 20px;
 
+        animation: fade-in-up 0.5s ease-in-out forwards;
+
         a{
             color: var(--white);
             padding: 10px 20px;
             border-radius: 5px;
 
             transition: color ease .3s, background-color ease-in-out .3s;
+
         }
         a:hover{
             color: var(--dark);
@@ -178,6 +178,8 @@ import Arrow from "../components/Arrow.astro";
         background-color: var(--white);
 
         transition: background-color .3s ease;
+        animation: fade-in-up 0.5s ease-in-out forwards;
+
 
         &:hover{
             background-color: var(--tertiary);
