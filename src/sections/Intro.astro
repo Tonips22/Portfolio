@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <img class="logo" src="./image0.jpeg" alt="Personal logo">
+    <img class="logo" src="./image0.webp" alt="Personal logo">
 </section>
 
 <style>
@@ -27,22 +27,23 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         min-height: 100vh;
-        width: auto;
 
-        gap: 20px;
+        gap: 50px;
     }
 
     @media (width <= 768px) {
         section{
             flex-direction: column;
-        }
+            padding: 1rem;
 
-        .info{
-            order: 2;
+            img{
+                width: 300px;
+            }
         }
+        
     }
 
     .info{
@@ -73,6 +74,22 @@
 
             span{
                 color: var(--secondary);
+            }
+        }
+    }
+
+    @media (width <= 768px) {
+        .info{
+            order: 2;
+            align-items: center;
+
+            h1{
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            h2{
+                font-size: 1rem;
             }
         }
     }
