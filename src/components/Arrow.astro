@@ -1,0 +1,61 @@
+<a href="#intro" class="arrow">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+</a>
+
+<style>
+    .arrow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 50px;
+        padding: 1rem;
+        border-radius: 50%;
+
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+
+        z-index: 999;
+
+        
+        background-color: #ffffff20;
+        color: var(--white);
+        
+        transition: all ease .3s, color ease .3s;
+
+        animation: arrow-fade ease both;
+        animation-timeline: scroll(root);
+        animation-range: 0 100px;
+
+        &:hover{
+            background-color: var(--white);
+            color: var(--dark);
+            scale: 1.1;
+        }
+    }
+
+    @media (width <= 768px) {
+        .arrow{
+            display: none;
+        }
+    }
+
+    @keyframes arrow-fade{
+        0%{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        75%{
+            opacity: 1;
+            transform: translateY(-10px);
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
