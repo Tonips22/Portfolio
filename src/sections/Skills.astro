@@ -1,0 +1,87 @@
+---
+import Tag from "../components/Tag.astro"
+---
+
+<section class="skills container" id="skills">
+    <h1>Skills</h1>
+
+    <div class="sub-container">
+        <Tag name="HTML5" link="./html5.svg"/>
+
+        <Tag name="CSS3" link="./css3.svg"/>
+
+        <Tag name="JavaScript" link="./javascript.svg"/>
+
+        <Tag name="Astro" link="./astro.svg"/>
+
+        <Tag name="PHP" link="./php.svg"/>
+
+        <Tag name="Laravel" link="./laravel.svg"/>
+
+        <Tag name="MySQL" link="./mysql.svg"/>
+
+        <Tag name="Git" link="./git.svg"/>
+
+        <Tag name="Photoshop" link="./photoshop.svg"/>
+        
+        <Tag name="Premiere" link="./premiere-pro.svg"/>
+    </div>
+</section>
+
+<style>
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5rem;
+
+        min-height: 100vh;
+
+        h1{
+            font-family: var(--primaryFont);
+            font-size: 5rem;
+        }
+
+        animation: fade-in ease-in-out .3s both;
+        animation-timeline: view();
+        animation-range: entry 30% 40%;
+    }
+
+    @keyframes fade-in{
+        from{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .sub-container{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        place-content: center;
+        row-gap: 5rem;
+        column-gap: 2rem;
+
+        max-width: 50%;
+    }
+
+    @media (width <= 1024px) {
+        .sub-container{
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+    }
+
+    @media (width <= 768px) {
+        .sub-container{
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+</style>
