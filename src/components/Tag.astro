@@ -1,0 +1,149 @@
+---
+ interface Props {
+    link: string
+    name: string    
+}
+const {name} = Astro.props;
+const {link} = Astro.props;
+---
+<div class={`${name} tag`}>
+    <img  src={link} alt={name}>
+    <label>{name}</label>
+</div>
+
+<style>
+
+    .tag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        background-color: #ffffff20;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        padding: 10px;
+
+        cursor: pointer;
+
+        z-index: -10;
+        
+    }
+    img{
+        aspect-ratio: 1/1;
+        width: 50px;
+    }
+
+    label{
+        display: none;
+
+        position: absolute;
+        top: -50px;
+
+        color: var(--white);
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+
+        font-family: var(--primaryFont);
+        font-size: 12px;
+
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-align: center;
+
+        z-index: -999;
+
+        animation: fade-in ease .3s both;
+    }
+
+    @keyframes fade-in{
+        from{
+            opacity: 0;
+            transform: translateY(5px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .HTML5{
+        -webkit-box-shadow: 0 0 10px 7px #e34f26;
+        -moz-box-shadow: 0 0 10px 7px #e34f26;
+        box-shadow: 0 0 10px 7px #e34f26;
+    }
+
+    .CSS3{
+        -webkit-box-shadow: 0 0 10px 7px #264DE4;
+        -moz-box-shadow: 0 0 10px 7px #264DE4;
+        box-shadow: 0 0 10px 7px #264DE4;
+    }
+
+    .JavaScript{
+        -webkit-box-shadow: 0 0 10px 7px #F7DF1E;
+        -moz-box-shadow: 0 0 10px 7px #F7DF1E;
+        box-shadow: 0 0 10px 7px #F7DF1E;
+    }
+
+    .Astro{
+        -webkit-box-shadow: 0 0 10px 7px #FF6600;
+        -moz-box-shadow: 0 0 10px 7px #FF6600;
+        box-shadow: 0 0 10px 7px #FF6600;
+    }
+
+    .PHP{
+        -webkit-box-shadow: 0 0 10px 7px #4F5D95;
+        -moz-box-shadow: 0 0 10px 7px #4F5D95;
+        box-shadow: 0 0 10px 7px #4F5D95;
+    }
+
+    .Laravel{
+        -webkit-box-shadow: 0 0 10px 7px #FF2D20;
+        -moz-box-shadow: 0 0 10px 7px #FF2D20;
+        box-shadow: 0 0 10px 7px #FF2D20;
+    }
+
+    .MySQL{
+        -webkit-box-shadow: 0 0 10px 7px #00758F;
+        -moz-box-shadow: 0 0 10px 7px #00758F;
+        box-shadow: 0 0 10px 7px #00758F;
+    }
+
+    .Git{
+        -webkit-box-shadow: 0 0 10px 7px #F05032;
+        -moz-box-shadow: 0 0 10px 7px #F05032;
+        box-shadow: 0 0 10px 7px #F05032;
+    }
+
+    .Photoshop{
+        -webkit-box-shadow: 0 0 10px 7px #001DD9;
+        -moz-box-shadow: 0 0 10px 7px #001DD9;
+        box-shadow: 0 0 10px 7px #001DD9;
+    }
+
+    .Premiere{
+        -webkit-box-shadow: 0 0 10px 7px #820090;
+        -moz-box-shadow: 0 0 10px 7px #820090;
+        box-shadow: 0 0 10px 7px #820090;
+    }
+</style>
+
+<script>
+    const tags = document.querySelectorAll(".tag");
+    console.log(tags);
+
+    tags.forEach(tag => {
+        const label = tag.querySelector("label");
+
+        tag.addEventListener("mouseenter", ()=>{
+            label.style.display = "flex"
+        })
+
+        tag.addEventListener("mouseleave", ()=>{
+            label.style.display = "none"
+        })
+    });
+</script>
