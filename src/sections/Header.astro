@@ -8,16 +8,21 @@ import Arrow from "../components/Arrow.astro";
         <a href="#skills">Skills</a>
         <a href="#about">About Me</a>
         <div class="languages">
-            <a class="main-language" href="">
+            <button class="main-language" aria-expanded="true" aria-haspopup="true">
                 <img src="./bandera-espana.svg" alt="flag image">
                 Español
                 <i class="fa-solid fa-chevron-down"></i>
-            </a>
+            </button>
 
-            <a class="second-language" href="">
-                <img src="./bandera-reino.svg" alt="flag image">
-                English
-            </a>
+            <ul>
+                <li>
+                    <a class="second-language" href="">
+                        <img src="./bandera-reino.svg" alt="flag image">
+                        English
+                    </a>
+                </li>
+            </ul>
+
         </div>
     </nav>
 
@@ -111,6 +116,23 @@ import Arrow from "../components/Arrow.astro";
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        ul{
+            position: absolute;
+
+            bottom: -50px;
+            width: 100%;
+            padding-top: 50px;
+
+            display: none;
+        }
+    }
+
+    .languages:hover{
+        ul{
+            display: block;
+            z-index: -1;
+        }
     }
 
 
@@ -125,6 +147,18 @@ import Arrow from "../components/Arrow.astro";
         background-color: #ffffff20;
         backdrop-filter: blur(5px);
 
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: var(--white);
+
+        font-size: 1rem;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        transition: color ease .3s, background-color ease-in-out .3s;
+
         img{
             max-width: 20px;
             height: auto;
@@ -136,7 +170,13 @@ import Arrow from "../components/Arrow.astro";
         }
     }
 
-    .main-language:hover{
+    .languages:hover{
+
+        .main-language{
+                background-color: var(--white);
+            color: var(--dark);
+        }
+
         .fa-chevron-down{
             rotate: 180deg;
         }
@@ -147,16 +187,7 @@ import Arrow from "../components/Arrow.astro";
     }
 
     .second-language{
-
-        display: none;
-
-        position: absolute;
-        bottom: calc(-100% - 10px);
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        animation: fade-in-down ease .3s both;
+        animation: fade-in-down .3s ease both;
     }
 
     @keyframes fade-in-down{
@@ -188,14 +219,14 @@ import Arrow from "../components/Arrow.astro";
 </style>
 
 <script>
-    const languages = document.querySelector(".languages");
-    const secondLanguage = document.querySelector(".second-language");
+    // const languages = document.querySelector(".languages");
+    // const secondLanguage = document.querySelector(".second-language");
 
-    languages.addEventListener("mouseenter", ()=>{
-        (secondLanguage as HTMLElement).style.display = "flex";
-    })
+    // languages.addEventListener("mouseenter", ()=>{
+    //     (secondLanguage as HTMLElement).style.display = "flex";
+    // })
 
-    languages.addEventListener("mouseleave", ()=>{
-        (secondLanguage as HTMLElement).style.display = "none";
-    })
+    // languages.addEventListener("mouseleave", ()=>{
+    //     (secondLanguage as HTMLElement).style.display = "none";
+    // })
 </script>
