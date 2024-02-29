@@ -1,0 +1,176 @@
+<section class="about container" id="about">
+    <h1>About Me</h1>
+    <div class="sub">
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta doloribus eius dolore magni tempore animi odit distinctio consequatur labore ex qui, optio hic, unde pariatur dolorem omnis praesentium nam reiciendis dolor vel nemo eaque dolorum eligendi! Soluta officiis odio repellendus sequi debitis nostrum quia totam aliquam, eum, asperiores eaque!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis incidunt sapiente, est voluptate, aut quas obcaecati veniam excepturi iusto ipsam assumenda. Impedit inventore, molestiae consequuntur sint maiores atque corrupti.</p>
+
+            <a class="CV" target="_blank" href="./CurriculumAGT.pdf">Download CV</a>
+        </div>
+
+        <form class="send" id="contact" action="https://formsubmit.co/3a515ec57a084cc4eb9e3e932e32f55a" method="POST">
+            <h2>Contact Me</h2>
+
+            <input class="input" type="text" name="name" placeholder="Name" required>
+            <input class="input" type="email" name="email" placeholder="E-mail" required>
+            <input class="input" type="text" name="subject" placeholder="Subject" required>
+
+            <textarea class="textarea" cols="30" rows="10" placeholder="Your message" required></textarea>
+
+            <input class="submit" value="Send" type="submit" >
+ 
+            <input type="hidden" name="_next" value="https://portfolio-agt.vercel.app/">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+</section>
+
+<style>
+
+    .about{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        min-height: 100vh;
+
+        h1{
+            font-family: var(--primaryFont);
+            font-size: 5rem;
+
+            animation: fade-in ease-in-out .3s both;
+            animation-timeline: view();
+            animation-range: entry 30% 40%;
+        }
+    }
+
+    @media (width <= 768px) {
+        .about{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .sub{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        color: var(--white);
+
+        animation: fade-in ease-in-out .3s both;
+        animation-timeline: view();
+        animation-range: entry 30% 40%;
+
+        p{
+            max-width: 60ch;
+        }
+    }
+    
+    .CV{
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: var(--dark);
+        background-color: var(--tertiary);
+
+        transition: background-color .3s ease;
+
+
+        &:hover{
+            background-color: var(--secondary);
+        }
+    }
+    .send{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        min-width: 900px;
+
+        background-color: #ffffff20;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        padding: 20px;
+
+        box-shadow: 3px 3px 10px 3px #000;
+
+        animation: fade-in ease-in-out .3s both;
+        animation-timeline: view();
+        animation-range: entry 30% 40%;
+
+        h2{
+            font-family: var(--primaryFont);
+            font-size: 2rem;
+        }
+
+        
+        
+    }
+    @media (width <= 1024px) {
+        .send{
+            min-width: 700px;
+        }
+    }
+    @media (width <= 768px) {
+        .send{
+            min-width: 100%;
+        }
+    }
+    
+    .input, .textarea, .submit{
+        padding: 10px 20px;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+
+        width: 80%;
+
+        color: var(--white);
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 5px;
+
+        font-size: 1rem;
+
+        transition: border-color .3s ease;
+
+        &:valid{
+            border-color: var(--tertiary);
+        }
+    }
+
+    .textarea {
+        resize: vertical;
+        max-height: 500px;
+    }
+
+    .submit{
+        border:none;
+        background-color: var(--white);
+        color: var(--dark);
+        cursor: pointer;
+
+        transition: ease .3s;
+
+        &:hover{
+            background-color: var(--tertiary);
+        }
+    }
+    
+</style>
