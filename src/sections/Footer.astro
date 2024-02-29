@@ -1,0 +1,40 @@
+<footer>
+    <p>&copy;Antonio García Torres</p>
+
+    <div class="social-media">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+
+<style>
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        margin-top: 5rem;
+        padding: 20px;
+        background-color: #ffffff20;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        a{
+            color: var(--tertiary);
+            transition: scale ease .3s;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+    }
+</style>
