@@ -9,16 +9,19 @@ import Arrow from "../components/Arrow.astro";
         <a href="#about">About Me</a>
         <div class="languages">
             <button class="main-language" aria-expanded="true" aria-haspopup="true">
-                <img src="./bandera-espana.svg" alt="flag image">
-                Español
+                <img src="./bandera-reino.svg" alt="flag image">
+                English
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
 
             <ul>
                 <li>
                     <a class="second-language" href="">
-                        <img src="./bandera-reino.svg" alt="flag image">
-                        English
+                        <img src="./bandera-espana.svg" alt="flag image">
+                        Español
+                        <div class="soon">
+                            <p>Coming Soon</p>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -96,6 +99,7 @@ import Arrow from "../components/Arrow.astro";
         animation: fade-in-up 0.5s ease-in-out forwards;
 
         a{
+            position: relative;
             color: var(--white);
             padding: 10px 20px;
             border-radius: 5px;
@@ -106,7 +110,29 @@ import Arrow from "../components/Arrow.astro";
         a:hover{
             color: var(--dark);
             background-color: var(--white);
+
+            .soon{
+                display: flex;
+            }
         }
+    }
+
+    .soon{
+        position: absolute;
+        inset: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 5px;
+
+
+        background-color: #000000b3;
+        backdrop-filter: blur(15px);
+
+        transition: .3s ease both;
     }
 
     .languages{
