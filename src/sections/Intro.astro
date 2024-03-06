@@ -5,7 +5,10 @@
 <section class="container" id="intro">
     <div class="info">
         <h1>Hi! I'm <span id="text">Antonio</span></h1>
-        <h2><span>Software engineer</span> specialized in <span>web apps</span> and <span>web desing</span> Software engineer specialized in web apps and web desing</h2>
+        <h2>
+            <p><span>Software engineer</span> specialized in <span>web apps</span> and <span>web desing</span>.</p>
+            <p>I love working on projects that <span>challenge my skills</span> and I enjoy <span>bringing smiles</span> to people's faces with my work.</p>
+        </h2>
         
         <div class="social-media">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -63,7 +66,6 @@
 
             span{
                 color: var(--primary);
-                min-height: 182px;
             }
         }
 
@@ -71,6 +73,14 @@
             font-size: 20px;
             text-wrap: pretty;
             max-width: 90%;
+
+            p{
+                margin-top: 10px;
+
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
 
             span{
                 color: var(--secondary);
