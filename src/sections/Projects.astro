@@ -1,17 +1,19 @@
 ---
-
+import { getI18N } from '@/i18n';
+const {currentLocale = "es"} = Astro
+const i18n = getI18N({ currentLocale })
 ---
 <section class="container" id="projects">
-    <h1>Projects</h1>
+    <h1>{i18n.PROJECT_NAME_SECTION}</h1>
 
     <div class="projects">
         <article class="project">
             <img src="./screenshot-nothing.png" alt="Nothing Project picture">
     
             <div class="info">
-                <h1>Nothing-Phone Redesign</h1>
+                <h1>{i18n.NOTHING_TITLE}</h1>
     
-                <p>Personal project on the redesign of the Nothing Phone 2 main page.</p>
+                <p>{i18n.NOTHING_DESCRIPTION}</p>
     
                 <div class="technologies">
                     <span>Astro</span>
@@ -20,7 +22,7 @@
                     <span>JavaScript</span>
                 </div>
     
-                <a target="_blank" href="https://nothing-phone-2.vercel.app/">Visit Website</a>
+                <a target="_blank" href="https://nothing-phone-2.vercel.app/">{i18n.VISIT_WEBSITE}</a>
             </div>
         </article>
     
@@ -28,9 +30,9 @@
             <img src="./screenshot-irecipe.png" alt="iRecipe screenshot picture">
     
             <div class="info">
-                <h1>iRecipe</h1>
+                <h1>{i18n.IRECIPE_TITLE}</h1>
     
-                <p>Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.</p>
+                <p>{i18n.IRECIPE_DESCRIPTION}</p>
     
                 <div class="technologies">
                     <span>HTML5</span>
@@ -40,7 +42,7 @@
                     <span>Laravel</span>
                 </div>
     
-                <a target="_blank" href="https://irecipe.000webhostapp.com/">Visit Website</a>
+                <a target="_blank" href="https://irecipe.000webhostapp.com/">{i18n.VISIT_WEBSITE}</a>
             </div>
         </article>
     
@@ -48,9 +50,9 @@
             <img src="./screenshot-weekly.png" alt="Weekly Gallery screenshot">
     
             <div class="info">
-                <h1>Weekly Gallery</h1>
+                <h1>{i18n.WEEKLY_GALLERY_TITLE}</h1>
     
-                <p>Simple Gallery page using HMTL CSS & JS inefine fioenfoen foeofneongfo fonefonengfoe oenfonfeonf</p>
+                <p>{i18n.WEEKLY_DESCRIPTION}</p>
     
                 <div class="technologies">
                     <span>HTML5</span>
@@ -58,7 +60,7 @@
                     <span>JavaScript</span>
                 </div>
     
-                <a target="_blank" href="https://tonips22.github.io/WeeklyGallery/">Visit Website</a>
+                <a target="_blank" href="https://tonips22.github.io/WeeklyGallery/">{i18n.VISIT_WEBSITE}</a>
             </div>
         </article>
     </div>

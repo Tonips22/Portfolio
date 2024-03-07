@@ -1,29 +1,35 @@
+---
+import { getI18N } from '@/i18n';
+const {currentLocale = "es"} = Astro
+const i18n = getI18N({ currentLocale })
+---
+
 <section class="about container" id="about">
-    <h1>About Me</h1>
+    <h1>{i18n.ABOUT_ME_NAME_SECTION}</h1>
     <div class="sub">
         <div class="info">
-            <p>Hi!👋, I'm Antonio García Torres, but you can also call me Toni. Currently, I'm in my third year of studying <span>computer science</span> at the <span>University of Granada</span>.</p>
+            <p set:html={i18n.ABOUT_ME_DESCRIPTION_1}></p>
 
-            <p>I have a particular passion for <span>web programming</span>. I enjoy exploring the latest technologies and trends in web development, and I love working on projects that <span>challenge my skills</span> and allow me to create interactive and engaging online experiences.</p>
+            <p set:html={i18n.ABOUT_ME_DESCRIPTION_2}></p>
             
 
-            <p>If I were to describe myself, I would say that I'm a down-to-earth individual who <span>loves sports</span>. I play soccer, tennis, paddle, and I also frequent the gym. I consider myself very sociable, making it easy to collaborate with me. I enjoy bringing smiles to people's faces and strive to create a <span>positive working environment</span>.</p>
+            <p set:html={i18n.ABOUT_ME_DESCRIPTION_3}></p>
 
-            <p>Furthermore, I consider myself to be <span>driven, dedicated, and ambitious</span>. I'm passionate about whatever I choose to pursue and I never give up until I <span>achieve my goals</span>.</p>
+            <p set:html={i18n.ABOUT_ME_DESCRIPTION_4}></p>
 
-            <a class="CV" target="_blank" href="./CurriculumAGT.pdf">Download CV</a>
+            <a class="CV" target="_blank" href="./CurriculumAGT.pdf">{i18n.CV_NAME_LINK}</a>
         </div>
 
         <form class="send" id="contact" action="https://formsubmit.co/3a515ec57a084cc4eb9e3e932e32f55a" method="POST">
-            <h2>Contact Me</h2>
+            <h2>{i18n.CONTACT_LINK}</h2>
 
-            <input class="input" type="text" name="name" placeholder="Name" required>
-            <input class="input" type="email" name="email" placeholder="E-mail" required>
-            <input class="input" type="text" name="subject" placeholder="Subject" required>
+            <input class="input" type="text" name="name" placeholder={i18n.CONTACT_ME_PLACEHOLDER_NAME} required>
+            <input class="input" type="email" name="email" placeholder={i18n.CONTACT_ME_PLACEHOLDER_EMAIL} required>
+            <input class="input" type="text" name="subject" placeholder={i18n.CONTACT_ME_PLACEHOLDER_SUBJECT} required>
 
-            <textarea class="textarea" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <textarea class="textarea" cols="30" rows="10" placeholder={i18n.CONTACT_ME_PLACEHOLDER_MESSAGE} required></textarea>
 
-            <input class="submit" value="Send" type="submit" >
+            <input class="submit" value={i18n.CONTACT_ME_BUTTON} type="submit" >
  
             <input type="hidden" name="_next" value="https://portfolio-agt.vercel.app/">
             <input type="hidden" name="_captcha" value="false">

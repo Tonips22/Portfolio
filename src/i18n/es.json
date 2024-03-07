@@ -1,0 +1,50 @@
+{
+    "NAME": "Español",
+    "NAME_INVERSION": "English",
+
+    "LANGUAGE": "es",
+    "LANGUAGE_INVERSION": "en",
+
+    "FLAG": "./bandera-espana.svg",
+    "FLAG_INVERSION": "./bandera-reino.svg",
+
+    "SEO_DESCRIPTION": "Portafolio personal de Antonio García Torres.",
+
+    "PROJECT_NAME_SECTION": "Proyectos",
+    "SKILLS_NAME_SECTION": "Habilidades",
+    "ABOUT_ME_NAME_SECTION": "Sobre mí",
+
+    "CV_NAME_LINK": "Descargar CV",
+    "CONTACT_LINK": "Contacto",
+    "VISIT_WEBSITE": "Visitar Web",
+
+    "INTRO_BASE": "¡Hola! Soy ",
+    "INTRO_NAME_1": "Antonio",
+    "INTRO_NAME_2": "TONI",
+    "INTRO_NAME_3": "Ingeniero de software",
+    "INTRO_NAME_4": "Desarrollador web",
+    "INTRO_NAME_5": "Diseñador web",
+
+    "INTRO_DESCRIPTION_1": "<span>Ingeniero de software</span> especializado en <span>aplicaciones web</span> y <span>diseño web</span>.",
+    "INTRO_DESCRIPTION_2": "Me encanta trabajar en proyectos que <span>desafíen mis habilidades</span> y disfruto <span>haciendo sonreír</span> a la gente con mi trabajo.",
+
+    "NOTHING_TITLE": "Rediseño de Nothing Phone",
+    "NOTHING_DESCRIPTION": "Rediseño de la página principal de Nothing Phone. Un diseño minimalista y moderno que refleja la filosofía de la marca.",
+
+    "IRECIPE_TITLE": "iRecipe",
+    "IRECIPE_DESCRIPTION": "Proyecto personal sobre la creación de un blog de recetas que contiene las operaciones fundamentales CRUD (Create, Read, Update and Delete) y POO.",
+
+    "WEEKLY_GALLERY_TITLE": "Weekly Gallery",
+    "WEEKLY_DESCRIPTION": "Página de Galería simple utilizando HMTL CSS & JS para mostrar una galería semanal de imágenes.",
+
+    "ABOUT_ME_DESCRIPTION_1": "¡Hola!👋, soy Antonio García Torres, pero también puedes llamarme Toni. Actualmente, estoy en mi tercer año de estudios de <span>informática</span> en la <span>Universidad de Granada</span>.",
+    "ABOUT_ME_DESCRIPTION_2": "Tengo una pasión particular por la <span>programación web</span>. Disfruto explorando las últimas tecnologías y tendencias en desarrollo web, y me encanta trabajar en proyectos que <span>desafíen mis habilidades</span> y me permitan crear experiencias en línea interactivas y atractivas.",
+    "ABOUT_ME_DESCRIPTION_3": "Si tuviera que describirme, diría que soy una persona <span>realista</span> que <span>ama el deporte</span>. Juego al fútbol, al tenis, al pádel y también frecuento el gimnasio. Me considero muy sociable, lo que facilita la colaboración conmigo. Disfruto haciendo sonreír a la gente y me esfuerzo por crear un <span>ambiente de trabajo positivo</span>.",
+    "ABOUT_ME_DESCRIPTION_4": "Además, me considero <span>motivado, dedicado y ambicioso</span>. Soy apasionado por lo que elijo perseguir y nunca me rindo hasta que <span>alcance mis objetivos</span>.",
+
+    "CONTACT_ME_PLACEHOLDER_NAME": "Nombre",
+    "CONTACT_ME_PLACEHOLDER_EMAIL": "Email",
+    "CONTACT_ME_PLACEHOLDER_SUBJECT": "Asunto",
+    "CONTACT_ME_PLACEHOLDER_MESSAGE": "Tu mensaje",
+    "CONTACT_ME_BUTTON": "Enviar"
+}

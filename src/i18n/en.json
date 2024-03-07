@@ -1,0 +1,53 @@
+{
+    "NAME": "English",
+    "NAME_INVERSION": "Español",
+
+    "LANGUAGE": "en",
+    "LANGUAGE_INVERSION": "/",
+
+    "FLAG": "./bandera-reino.svg",
+    "FLAG_INVERSION": "./bandera-espana.svg",
+
+    "SEO_DESCRIPTION": "Antonio García Torres's personal portfolio.",
+
+    "PROJECT_NAME_SECTION": "Projects",
+    "SKILLS_NAME_SECTION": "Skills",
+    "ABOUT_ME_NAME_SECTION": "About me",
+
+    "CV_NAME_LINK": "Download CV",
+    "CONTACT_LINK": "Contact",
+    "VISIT_WEBSITE": "Visit Website",
+
+    "INTRO_BASE": "Hi! I'm ",
+    "INTRO_NAME_1": "Antonio",
+    "INTRO_NAME_2": "TONI",
+    "INTRO_NAME_3": "Software engineer",
+    "INTRO_NAME_4": "Web developer",
+    "INTRO_NAME_5": "Web Designer",
+
+    "INTRO_DESCRIPTION_1": "<span>Software engineer</span> specialized in <span>web apps</span> and <span>web desing</span>.",
+    "INTRO_DESCRIPTION_2": "I love working on projects that <span>challenge my skills</span> and I enjoy <span>bringing smiles</span> to people's faces with my work.",
+
+    "NOTHING_TITLE": "Nothing Phone Redesign",
+    "NOTHING_DESCRIPTION": "Redesign of the Nothing Phone main page. A minimalist and modern design that reflects the brand's philosophy.",
+
+    "IRECIPE_TITLE": "iRecipe",
+    "IRECIPE_DESCRIPTION": "Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.",
+
+    "WEEKLY_GALLERY_TITLE": "Weekly Gallery",
+    "WEEKLY_DESCRIPTION": "Simple Gallery page using HMTL CSS & JS to show a weekly gallery of images.",
+
+    "ABOUT_ME_DESCRIPTION_1": "Hi!👋, I'm Antonio García Torres, but you can also call me Toni. Currently, I'm in my third year of studying <span>computer science</span> at the <span>University of Granada</span>.",
+    "ABOUT_ME_DESCRIPTION_2": "I have a particular passion for <span>web programming</span>. I enjoy exploring the latest technologies and trends in web development, and I love working on projects that <span>challenge my skills</span> and allow me to create interactive and engaging online experiences.",
+    "ABOUT_ME_DESCRIPTION_3": "If I were to describe myself, I would say that I'm a down-to-earth individual who <span>loves sports</span>. I play soccer, tennis, paddle, and I also frequent the gym. I consider myself very sociable, making it easy to collaborate with me. I enjoy bringing smiles to people's faces and strive to create a <span>positive working environment</span>.",
+    "ABOUT_ME_DESCRIPTION_4": "Furthermore, I consider myself to be <span>driven, dedicated, and ambitious</span>. I'm passionate about whatever I choose to pursue and I never give up until I <span>achieve my goals</span>.",
+
+    "CONTACT_ME_PLACEHOLDER_NAME": "Name",
+    "CONTACT_ME_PLACEHOLDER_EMAIL": "Email",
+    "CONTACT_ME_PLACEHOLDER_SUBJECT": "Subject",
+    "CONTACT_ME_PLACEHOLDER_MESSAGE": "Your message",
+    "CONTACT_ME_BUTTON": "Send"
+
+
+
+}

@@ -1,13 +1,19 @@
 ---
+// Importa getI18N
+import { getI18N } from '@/i18n';
 
+const { currentLocale = 'es' } = Astro;
+
+// Obtiene el objeto i18n
+const i18n = getI18N({ currentLocale });
 ---
 
 <section class="container" id="intro">
     <div class="info">
-        <h1>Hi! I'm <span id="text">Antonio</span></h1>
+        <h1>{i18n.INTRO_BASE}<span id="text">Antonio</span></h1>
         <h2>
-            <p><span>Software engineer</span> specialized in <span>web apps</span> and <span>web desing</span>.</p>
-            <p>I love working on projects that <span>challenge my skills</span> and I enjoy <span>bringing smiles</span> to people's faces with my work.</p>
+            <p set:html={i18n.INTRO_DESCRIPTION_1}></p>
+            <p set:html={i18n.INTRO_DESCRIPTION_2}></p>
         </h2>
         
         <div class="social-media">
@@ -16,7 +22,7 @@
             <a href="https://github.com/Tonips22" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a class="contact" href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSMVJPzJmncbJpzGJXWnWrlRJGdKsQnMKKmDnjLcqZKDwfNhpJWhlzjNtKmvKhHxlFsPgFTg">
                 <i class="fa-solid fa-envelope"></i>
-                Contact
+                {i18n.CONTACT_LINK}
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -174,12 +180,21 @@
 <script src="https://kit.fontawesome.com/ebd46689b1.js" crossorigin="anonymous"></script>
 
 <script>
+    // Importa Typed
     import Typed from 'typed.js';
 
+
+    // // Define las strings
+    // const strings = ['Toni', i18n.INTRO_NAME_3, i18n.INTRO_NAME_4, i18n.INTRO_NAME_5];
+  
+    // Define las strings
+    const strings = ['Toni','Sofware developer', 'Web Developer', 'Web Designer'];
+  
+    // Inicializa Typed
     const typed = new Typed('#text', {
-        strings: ['Toni','Software engineer', 'Web Developer', 'Web Designer'],
-        typeSpeed: 60,
-        startDelay: 500,
-        backSpeed: 30
+      strings,
+      typeSpeed: 60,
+      startDelay: 500,
+      backSpeed: 30
     });
-</script>
+  </script>

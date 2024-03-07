@@ -7,7 +7,7 @@ const {name} = Astro.props;
 const {link} = Astro.props;
 ---
 <div class={`${name} tag`}>
-    <img  src={link} alt={name}>
+    <img loading="lazy"  src={link} alt={name}>
     <label>{name}</label>
 </div>
 

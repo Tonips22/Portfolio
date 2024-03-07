@@ -1,27 +1,28 @@
 ---
 import Arrow from "@/components/Arrow.astro";
+
+import { getI18N } from '@/i18n';
+const {currentLocale = "es"} = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <header>
     <nav class="navigation">
-        <a href="#projects">Proyects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About Me</a>
+        <a href="#projects">{i18n.PROJECT_NAME_SECTION}</a>
+        <a href="#skills">{i18n.SKILLS_NAME_SECTION}</a>
+        <a href="#about">{i18n.ABOUT_ME_NAME_SECTION}</a>
         <div class="languages">
             <button class="main-language" aria-expanded="true" aria-haspopup="true">
-                <img src="./bandera-reino.svg" alt="flag image">
-                English
+                <img src={i18n.FLAG} alt="flag image">
+                {i18n.NAME}
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
 
             <ul>
                 <li>
-                    <a class="second-language" href="">
-                        <img src="./bandera-espana.svg" alt="flag image">
-                        Español
-                        <div class="soon">
-                            <p>Coming Soon</p>
-                        </div>
+                    <a class="second-language" href=`${i18n.LANGUAGE_INVERSION}`>
+                        <img src={i18n.FLAG_INVERSION} alt=`flag ${i18n.NAME_INVERSION}`>
+                        {i18n.NAME_INVERSION}
                     </a>
                 </li>
             </ul>
@@ -29,7 +30,7 @@ import Arrow from "@/components/Arrow.astro";
         </div>
     </nav>
 
-    <a class="CV" target="_blank" href="./CurriculumAGT.pdf">Download CV</a>
+    <a class="CV" target="_blank" href="./CurriculumAGT.pdf">{i18n.CV_NAME_LINK}</a>
     
 </header>
 
