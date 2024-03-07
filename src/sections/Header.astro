@@ -33,6 +33,9 @@ import Arrow from "../components/Arrow.astro";
     
 </header>
 
+<i class="responsive-icon fa-solid fa-bars"></i>
+<i class="responsive-icon fa-solid fa-xmark"></i>
+
 <Arrow/>
 
 <style>
@@ -51,6 +54,20 @@ import Arrow from "../components/Arrow.astro";
         animation: scroll-blur ease-in-out both;
         animation-timeline: scroll();
         animation-range: entry 50px cover 100px;
+    }
+
+    @media (width <= 768px) {
+        header{
+            display: none;
+            inset: 0;
+            flex-direction: column;
+
+            background-color: #1e1e1ed8;
+            backdrop-filter: blur(15px);
+
+            animation: fade-left .3s ease-in-out both;
+
+        }
     }
 
     @keyframes scroll-blur{
@@ -73,12 +90,6 @@ import Arrow from "../components/Arrow.astro";
         to{
             opacity: 1;
             transform: translateY(0);
-        }
-    }
-
-    @media (width <= 768px) {
-        header{
-            display: none;
         }
     }
 
@@ -116,6 +127,66 @@ import Arrow from "../components/Arrow.astro";
             }
         }
     }
+
+    @media (width <= 768px) {
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            animation: fade-left .3s ease-in-out both;
+            
+        }
+    }
+
+    .responsive-icon{
+        display: none;
+        position: fixed;
+        top: 10px;
+        right: 0;
+
+        background-color: #1e1e1e80;
+        backdrop-filter: blur(15px);
+
+        padding: 10px;
+        border-radius: 50% 0 0 50%;
+        color: var(--white);
+        font-size: 2rem;
+
+        z-index: 10000;
+        cursor: pointer;
+
+        animation: fade-left .3s ease-in-out both;
+    }
+
+    @media (width <= 768px) {
+        .responsive-icon{
+            display: flex;
+        }
+
+        .fa-bars{
+            display: block;
+        }
+
+        .fa-xmark{
+            display: none;
+        }
+    }
+
+    @keyframes fade-left{
+        from{
+            transform: translateX(20px);
+            opacity: 0;
+        }
+
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    
 
     .soon{
         position: absolute;
@@ -242,4 +313,36 @@ import Arrow from "../components/Arrow.astro";
             background-color: var(--tertiary);
         }
     }
+
+    @media (width <= 768px) {
+        .CV{
+            animation: fade-left .3s ease-in-out both;
+        }
+    }
 </style>
+
+<script>
+    const bar = document.querySelector(".fa-bars") as HTMLElement;
+    const header = document.querySelector("header") as HTMLElement;
+    const x = document.querySelector(".fa-xmark") as HTMLElement;
+    const body = document.querySelector("body") as HTMLElement;
+
+    bar.addEventListener("click", function(){
+        header.style.display = "flex";
+        bar.style.display = "none";
+        x.style.display = "block";
+        body.classList.add("no-scroll");
+
+    })
+
+    x.addEventListener("click", function(){
+        header.style.display = "none";
+        bar.style.display = "block";
+        x.style.display = "none";
+        body.classList.remove("no-scroll")
+
+    })
+
+
+
+</script>
