@@ -47,14 +47,14 @@ const i18n = getI18N({ currentLocale })
 
         min-height: 100vh;
 
-        h1{
-            font-family: var(--primaryFont);
-            font-size: 5rem;
-        }
-
         animation: fade-in ease-in-out .3s both;
         animation-timeline: view();
         animation-range: entry 30% 40%;
+    }
+
+    .skills h1{
+        font-family: var(--primaryFont);
+        font-size: 5rem;
     }
 
     @keyframes fade-in{

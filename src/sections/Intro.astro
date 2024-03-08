@@ -47,10 +47,10 @@ const i18n = getI18N({ currentLocale });
         section{
             flex-direction: column;
             padding: 1rem;
+        }
 
-            img{
-                width: 300px;
-            }
+        section img{
+            width: 300px;
         }
         
     }
@@ -63,50 +63,49 @@ const i18n = getI18N({ currentLocale });
         justify-content: center;
 
         gap: 20px;
+    }
 
+    .info h1{
+        font-family: var(--primaryFont);
 
-        h1{
-            font-family: var(--primaryFont);
+        font-size: 5rem;
+    }
 
-            font-size: 5rem;
+    .info h1 span{
+        color: var(--primary);
+    }
 
-            span{
-                color: var(--primary);
-            }
+    .info h2{
+        font-size: 20px;
+        text-wrap: pretty;
+        max-width: 90%;
+
+        span{
+            color: var(--secondary);
         }
+    }
 
-        h2{
-            font-size: 20px;
-            text-wrap: pretty;
-            max-width: 90%;
+    .info h2 p{
+        margin-top: 10px;
+    }
 
-            p{
-                margin-top: 10px;
-
-                &:first-child{
-                    margin-top: 0;
-                }
-            }
-
-            span{
-                color: var(--secondary);
-            }
-        }
+    .info h2 p:first-child{
+        margin-top: 0;
     }
 
     @media (width <= 768px) {
         .info{
             order: 2;
             align-items: center;
+        }
 
-            h1{
-                text-align: center;
-                font-size: 3rem;
-            }
+        .info h1{
+            text-align: center;
+            font-size: 3rem;
+        }
 
-            h2{
-                font-size: 1rem;
-            }
+        .info h2{
+            font-size: 1rem;
         }
     }
 
@@ -116,45 +115,43 @@ const i18n = getI18N({ currentLocale });
         align-items: center;
         justify-content: center;
         gap: 20px;
+    }
+
+    .social-media a{
+        text-decoration: none;
+        color: var(--tertiary);
+        font-size: 38.4px;
+
+        transition: color ease .3s;
+    }
+
+    .social-media a:hover{
+        color: var(--secondary);
+    }
+
+    .social-media .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        padding: 10px 20px;
+        background-color: var(--white);
+        color: var(--dark);
+        border-radius: 5px;
+        
+        font-size: 1rem;
 
 
+        transition: all ease .3s;
+    }
 
-        a{
-            text-decoration: none;
-            color: var(--tertiary);
-            font-size: 38.4px;
-
-            transition: color ease .3s;
-
-            &:hover{
-                color: var(--secondary);
-            }
-        }
-
-        .contact{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            padding: 10px 20px;
-            background-color: var(--white);
-            color: var(--dark);
-            border-radius: 5px;
-            
-            font-size: 1rem;
-
-
-            transition: all ease .3s;
-        }
-
-        .contact:hover{
-            background-color: var(--tertiary);
-            color: var(--dark);
-            
-            .fa-arrow-right{
-                margin-left: 5px;
-            }
+    .social-media .contact:hover{
+        background-color: var(--tertiary);
+        color: var(--dark);
+        
+        .fa-arrow-right{
+            margin-left: 5px;
         }
     }
 
@@ -166,10 +163,6 @@ const i18n = getI18N({ currentLocale });
         aspect-ratio: 1/1;
         max-width: 500px;
         height: auto;
-        /* border-radius: 75% 25% 75% 25% / 25% 75% 25% 75%; */
-        /* border-radius: 48% 52% 52% 48% / 25% 43% 57% 75%; */
-        /* border-radius: 48% 52% 52% 48% / 64% 43% 57% 36%; */
-        /* border-radius: 48% 52% 52% 48% / 69% 31% 69% 31%; */
         border-radius: 41% 30% 41% 30% / 69% 31% 69% 31%;
 
         box-shadow: 3px 3px 10px 3px #000;

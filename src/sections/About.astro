@@ -48,23 +48,15 @@ const i18n = getI18N({ currentLocale })
         gap: 2rem;
 
         min-height: 100vh;
-
-        h1{
-            font-family: var(--primaryFont);
-            font-size: 5rem;
-
-            animation: fade-in ease-in-out .3s both;
-            animation-timeline: view();
-            animation-range: entry 30% 40%;
-        }
     }
 
-    @media (width <= 768px) {
-        .about{
-            h1{
-                font-size: 3rem;
-            }
-        }
+    .about h1{
+        font-family: var(--primaryFont);
+        font-size: 5rem;
+
+        animation: fade-in ease-in-out .3s both;
+        animation-timeline: view();
+        animation-range: entry 30% 40%;
     }
 
     .sub{
@@ -88,15 +80,17 @@ const i18n = getI18N({ currentLocale })
         animation-timeline: view();
         animation-range: entry 30% 40%;
 
-        p{
-            max-width: 60ch;
-        }
-
         span{
             color: var(--secondary);
             font-weight: bold;
         }
     }
+
+    .info p{
+        max-width: 60ch;
+    }
+
+    .info 
     
     .CV{
         border-radius: 5px;
@@ -105,7 +99,6 @@ const i18n = getI18N({ currentLocale })
         background-color: var(--tertiary);
 
         transition: background-color .3s ease;
-
 
         &:hover{
             background-color: var(--secondary);
@@ -130,15 +123,13 @@ const i18n = getI18N({ currentLocale })
         animation: fade-in ease-in-out .3s both;
         animation-timeline: view();
         animation-range: entry 30% 40%;
-
-        h2{
-            font-family: var(--primaryFont);
-            font-size: 3rem;
-        }
-
-        
-        
     }
+
+    .send h2{
+        font-family: var(--primaryFont);
+        font-size: 3rem;
+    }
+
     @media (width <= 1024px) {
         .send{
             min-width: 700px;
@@ -165,15 +156,21 @@ const i18n = getI18N({ currentLocale })
         font-size: 1rem;
 
         transition: border-color .3s ease;
+    }
 
-        &:valid{
-            border-color: var(--tertiary);
-        }
+    .input:valid, .textarea:valid, .submit:valid{
+        border-color: var(--tertiary);
     }
 
     .textarea {
         resize: vertical;
         max-height: 500px;
+    }
+
+    @media (width <= 768px) {
+        .input, .textarea, .submit{
+            background-color: #1e1e1ec0;
+        }
     }
 
     .submit{
@@ -183,10 +180,10 @@ const i18n = getI18N({ currentLocale })
         cursor: pointer;
 
         transition: ease .3s;
-
-        &:hover{
-            background-color: var(--tertiary);
-        }
     }
-    
+
+    .submit:hover{
+        background-color: var(--tertiary);
+    }
+
 </style>

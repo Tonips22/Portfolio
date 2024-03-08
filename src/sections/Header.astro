@@ -110,23 +110,21 @@ const i18n = getI18N({ currentLocale })
 
         animation: fade-in-up 0.5s ease-in-out forwards;
 
-        a{
-            position: relative;
-            color: var(--white);
-            padding: 10px 20px;
-            border-radius: 5px;
+        
+    }
 
-            transition: color ease .3s, background-color ease-in-out .3s;
+    .navigation a{
+        position: relative;
+        color: var(--white);
+        padding: 10px 20px;
+        border-radius: 5px;
 
-        }
-        a:hover{
-            color: var(--dark);
-            background-color: var(--white);
+        transition: color ease .3s, background-color ease-in-out .3s;
 
-            .soon{
-                display: flex;
-            }
-        }
+    }
+    .navigation a:hover{
+        color: var(--dark);
+        background-color: var(--white);
     }
 
     @media (width <= 768px) {
@@ -147,12 +145,12 @@ const i18n = getI18N({ currentLocale })
         top: 10px;
         right: 0;
 
-        background-color: #1e1e1e80;
-        backdrop-filter: blur(15px);
+        background-color: var(--white);
+        /* backdrop-filter: blur(15px); */
 
         padding: 10px;
         border-radius: 50% 0 0 50%;
-        color: var(--white);
+        color: var(--dark);
         font-size: 2rem;
 
         z-index: 10000;
@@ -160,6 +158,10 @@ const i18n = getI18N({ currentLocale })
 
         animation: fade-left .3s ease-in-out both;
     }
+
+    /* .responsive-icon i{
+        display: none;
+    } */
 
     @media (width <= 768px) {
         .responsive-icon{
@@ -187,26 +189,6 @@ const i18n = getI18N({ currentLocale })
         }
     }
 
-    
-
-    .soon{
-        position: absolute;
-        inset: 0;
-
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        border-radius: 5px;
-
-
-        background-color: #000000b3;
-        backdrop-filter: blur(15px);
-
-        transition: .3s ease both;
-    }
-
     .languages{
         position: relative;
 
@@ -214,23 +196,21 @@ const i18n = getI18N({ currentLocale })
         flex-direction: row;
         align-items: center;
         justify-content: center;
-
-        ul{
-            position: absolute;
-
-            bottom: -50px;
-            width: 100%;
-            padding-top: 50px;
-
-            display: none;
-        }
     }
 
-    .languages:hover{
-        ul{
-            display: block;
-            z-index: -1;
-        }
+    .languages ul{
+        position: absolute;
+
+        bottom: -50px;
+        width: 100%;
+        padding-top: 50px;
+
+        display: none;
+    }
+
+    .languages:hover ul{
+        display: block;
+        z-index: -1;
     }
 
 
@@ -256,28 +236,25 @@ const i18n = getI18N({ currentLocale })
         cursor: pointer;
 
         transition: color ease .3s, background-color ease-in-out .3s;
-
-        img{
-            max-width: 20px;
-            height: auto;
-            border-radius: 2px;
-        }
-
-        i{
-            font-size: 10px;
-        }
     }
 
-    .languages:hover{
+    .main-language img, .second-language img{
+        max-width: 20px;
+        height: auto;
+        border-radius: 2px;
+    }
 
-        .main-language{
-                background-color: var(--white);
-            color: var(--dark);
-        }
+    .main-language i, .second-language i{
+        font-size: 10px;
+    }
 
-        .fa-chevron-down{
-            rotate: 180deg;
-        }
+    .languages:hover .main-language{
+        background-color: var(--white);
+        color: var(--dark);
+    }
+
+    .languages:hover .fa-chevron-down{
+        rotate: 180deg;
     }
 
     .fa-chevron-down{

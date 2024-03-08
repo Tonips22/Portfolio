@@ -77,12 +77,12 @@ const i18n = getI18N({ currentLocale })
         gap: 2rem;
 
         min-height: 100vh;
+    }
 
-        h1{
-            font-size: 5rem;
-            font-family: var(--primaryFont);
-            color: var(--white);
-        }
+    section h1{
+        font-size: 5rem;
+        font-family: var(--primaryFont);
+        color: var(--white);
     }
     .projects{
         display: grid;
@@ -110,35 +110,33 @@ const i18n = getI18N({ currentLocale })
         border-radius: 5px;
 
         overflow: hidden;
+    }
 
-        img{
-            width: 100%;
-            object-fit: cover;
-            border-radius: 5px;
+    .project img{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
 
-            transition: scale .3s ease;
-            z-index: -10;
-            
-        }
+        transition: scale .3s ease;
+        z-index: -10;
+        
+    }
 
-        &:hover{
-            img{
-                scale: 1.2;
-            }
+    .project:hover img{
+        scale: 1.2;
+    }
 
-            .info{
-                display: flex;
-            }
-        }
+    .project:hover .info{
+        display: flex;
     }
 
     @media (width <= 768px) {
         .project{
             flex-direction: column;
+        }
 
-            img{
-                margin-bottom: 20px;
-            }
+        .project img{
+            margin-bottom: 20px;
         }
     }
 
@@ -159,29 +157,29 @@ const i18n = getI18N({ currentLocale })
         padding: 2rem;
 
         animation: fade .3s ease both;
+    }
 
-        h1{
-            color: var(--primary);
-            font-family: var(--primaryFont);
-            font-size: 2rem;
-            text-align: center;
-        }
+    .info h1{
+        color: var(--primary);
+        font-family: var(--primaryFont);
+        font-size: 2rem;
+        text-align: center;
+    }
 
-        a{
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: var(--dark);
-            background-color: var(--white);
+    .info a{
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: var(--dark);
+        background-color: var(--white);
 
-            transition: background-color ease .3s;
-            width: 80%;
-            text-align: center;
-            margin: 0 auto;
+        transition: background-color ease .3s;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
 
-            &:hover{
-                background-color: var(--tertiary);
-            }
-        }
+    .info a:hover{
+        background-color: var(--tertiary);
     }
 
     @keyframes fade {
@@ -201,27 +199,27 @@ const i18n = getI18N({ currentLocale })
         justify-content: center;
         gap: 10px;
         flex-wrap: wrap;
+    }
 
-        span{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 2px;
+    .technologies span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
 
-            /* border: 1px solid var(--white); */
-            color: var(--white);
-            background: #1e1e1e20;
-            background: -webkit-linear-gradient(135deg, #1e1e1e20 0%, rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.13) 100%);
-            background: linear-gradient(135deg, #1e1e1e20 0%, rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.13) 100%);
-            
-            padding: 5px 10px;
-            border-radius: 5rem;
+        /* border: 1px solid var(--white); */
+        color: var(--white);
+        background: #1e1e1e20;
+        background: -webkit-linear-gradient(135deg, #1e1e1e20 0%, rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.13) 100%);
+        background: linear-gradient(135deg, #1e1e1e20 0%, rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.13) 100%);
+        
+        padding: 5px 10px;
+        border-radius: 5rem;
 
-            font-size: 12px;
+        font-size: 12px;
 
-            cursor: default;
-        }
+        cursor: default;
     }
 </style>
 
