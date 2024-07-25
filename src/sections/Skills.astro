@@ -4,37 +4,38 @@ import Tag from "@/components/Tag.astro"
 import { getI18N } from '@/i18n';
 const {currentLocale = "es"} = Astro
 const i18n = getI18N({ currentLocale })
+
 ---
 
 <section class="skills container" id="skills">
     <h1>{i18n.SKILLS_NAME_SECTION}</h1>
 
     <div class="sub-container">
-        <Tag name="HTML5" link="./html5.svg"/>
+        <Tag name="HTML5" link="html5.svg"/>
 
-        <Tag name="CSS3" link="./css3.svg"/>
+        <Tag name="CSS3" link="css3.svg"/>
 
-        <Tag name="JavaScript" link="./javascript.svg"/>
+        <Tag name="JavaScript" link="javascript.svg"/>
 
-        <Tag name="Astro" link="./astro.svg"/>
+        <Tag name="Astro" link="astro.svg"/>
 
-        <Tag name="TailwindCSS" link="./tailwind.svg"/>
+        <Tag name="TailwindCSS" link="tailwind.svg"/>
 
-        <Tag name="PHP" link="./php.svg"/>
+        <Tag name="PHP" link="php.svg"/>
 
-        <Tag name="Laravel" link="./laravel.svg"/>
+        <Tag name="Laravel" link="laravel.svg"/>
 
-        <Tag name="Java" link="./java.svg"/>
+        <Tag name="Java" link="java.svg"/>
 
-        <Tag name="C++" link="./c++.svg"/>
+        <Tag name="C++" link="c++.svg"/>
 
-        <Tag name="MySQL" link="./mysql.svg"/>
+        <Tag name="MySQL" link="mysql.svg"/>
 
-        <Tag name="Git" link="./git.svg"/>
+        <Tag name="Git" link="git.svg"/>
 
-        <Tag name="Photoshop" link="./photoshop.svg"/>
+        <Tag name="Photoshop" link="photoshop.svg"/>
         
-        <Tag name="Premiere" link="./premiere-pro.svg"/>
+        <Tag name="Premiere" link="premiere-pro.svg"/>
     </div>
 </section>
 
