@@ -11,20 +11,16 @@ const i18n = getI18N({ currentLocale });
 <section class="container" id="intro">
     <div class="info">
         <h1>{i18n.INTRO_BASE}<span id="text">Antonio</span></h1>
-        <h2>
+        <h3>
             <p set:html={i18n.INTRO_DESCRIPTION_1}></p>
             <p set:html={i18n.INTRO_DESCRIPTION_2}></p>
-        </h2>
+        </h3>
         
         <div class="social-media">
             <a href="https://www.instagram.com/tonniggrcia_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/antonio-garc%C3%ADa-torres-a635992b6/?locale=en_US" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Tonips22" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a class="contact" href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSMVJPzJmncbJpzGJXWnWrlRJGdKsQnMKKmDnjLcqZKDwfNhpJWhlzjNtKmvKhHxlFsPgFTg" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
-                {i18n.CONTACT_LINK}
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            <a href="mailto:tonnigt22@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
 
@@ -75,8 +71,12 @@ const i18n = getI18N({ currentLocale });
         color: var(--primary);
     }
 
-    .info h2{
-        font-size: 20px;
+    .info h3{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        font-size: 16px;
         text-wrap: pretty;
         max-width: 90%;
 
@@ -120,43 +120,13 @@ const i18n = getI18N({ currentLocale });
     .social-media a{
         text-decoration: none;
         color: var(--tertiary);
-        font-size: 38.4px;
+        font-size: 24px;
 
         transition: color ease .3s;
     }
 
     .social-media a:hover{
         color: var(--secondary);
-    }
-
-    .social-media .contact{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
-        padding: 10px 20px;
-        background-color: var(--white);
-        color: var(--dark);
-        border-radius: 5px;
-        
-        font-size: 1rem;
-
-
-        transition: all ease .3s;
-    }
-
-    .social-media .contact:hover{
-        background-color: var(--tertiary);
-        color: var(--dark);
-        
-        .fa-arrow-right{
-            margin-left: 5px;
-        }
-    }
-
-    .fa-arrow-right{
-        transition: all ease .3s;
     }
 
     .logo{
