@@ -33,8 +33,14 @@
     "PROJECT_2_TITLE": "iRecipe",
     "PROJECT_2_DESCRIPTION": "Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.",
 
-    "PROJECT_3_TITLE": "Weekly Gallery",
-    "PROJECT_3_DESCRIPTION": "Simple Gallery page using HMTL CSS & JS to show a weekly gallery of images.",
+    "PROJECT_3_TITLE": "Cine Scope",
+    "PROJECT_3_DESCRIPTION": "Movie search page fetching data from IMDB and using React & TailwindCSS.",
+    
+    "PROJECT_4_TITLE": "Movimiento Y Vida",
+    "PROJECT_4_DESCRIPTION": "Page of a physiotherapy and rehabilitation clinic that shows information about it and the services they offer.",
+    
+    "PROJECT_5_TITLE": "React Games",
+    "PROJECT_5_DESCRIPTION": "Page of simple games made with React and styled with native CSS.",
 
     "ABOUT_ME_DESCRIPTION_1": "Hi!👋, I'm Antonio García Torres, but you can also call me Toni. Currently, I'm in my third year of studying <span>computer science</span> at the <span>University of Granada</span>.",
     "ABOUT_ME_DESCRIPTION_2": "I have a particular passion for <span>web programming</span>. I enjoy exploring the latest technologies and trends in web development, and I love working on projects that <span>challenge my skills</span> and allow me to create interactive and engaging online experiences.",
