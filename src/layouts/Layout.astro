@@ -12,6 +12,8 @@ const i18n = getI18N({ currentLocale })
 
 
 const { title } = Astro.props;
+
+const FONT_AWESOME_ID = import.meta.env.FONT_AWESOME_ID;
 ---
 
 <!doctype html>
@@ -27,6 +29,8 @@ const { title } = Astro.props;
 		<Header />
 		<slot />
 		<Footer />
+
+		<script src=`https://kit.fontawesome.com/${FONT_AWESOME_ID}.js` crossorigin="anonymous"></script>
 	</body>
 </html>
 <style is:global>
