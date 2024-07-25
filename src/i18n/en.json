@@ -15,7 +15,6 @@
     "ABOUT_ME_NAME_SECTION": "About me",
 
     "CV_NAME_LINK": "Download CV",
-    "CONTACT_LINK": "Contact",
     "VISIT_WEBSITE": "Visit Website",
 
     "INTRO_BASE": "Hi! I'm ",
@@ -28,14 +27,14 @@
     "INTRO_DESCRIPTION_1": "<span>Software engineer</span> specialized in <span>web apps</span> and <span>web desing</span>.",
     "INTRO_DESCRIPTION_2": "I love working on projects that <span>challenge my skills</span> and I enjoy <span>bringing smiles</span> to people's faces with my work.",
 
-    "NOTHING_TITLE": "Nothing Phone Redesign",
-    "NOTHING_DESCRIPTION": "Redesign of the Nothing Phone main page. A minimalist and modern design that reflects the brand's philosophy.",
+    "PROJECT_1_TITLE": "Nothing Phone Redesign",
+    "PROJECT_1_DESCRIPTION": "Redesign of the Nothing Phone main page. A minimalist and modern design that reflects the brand's philosophy.",
 
-    "IRECIPE_TITLE": "iRecipe",
-    "IRECIPE_DESCRIPTION": "Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.",
+    "PROJECT_2_TITLE": "iRecipe",
+    "PROJECT_2_DESCRIPTION": "Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.",
 
-    "WEEKLY_GALLERY_TITLE": "Weekly Gallery",
-    "WEEKLY_DESCRIPTION": "Simple Gallery page using HMTL CSS & JS to show a weekly gallery of images.",
+    "PROJECT_3_TITLE": "Weekly Gallery",
+    "PROJECT_3_DESCRIPTION": "Simple Gallery page using HMTL CSS & JS to show a weekly gallery of images.",
 
     "ABOUT_ME_DESCRIPTION_1": "Hi!👋, I'm Antonio García Torres, but you can also call me Toni. Currently, I'm in my third year of studying <span>computer science</span> at the <span>University of Granada</span>.",
     "ABOUT_ME_DESCRIPTION_2": "I have a particular passion for <span>web programming</span>. I enjoy exploring the latest technologies and trends in web development, and I love working on projects that <span>challenge my skills</span> and allow me to create interactive and engaging online experiences.",

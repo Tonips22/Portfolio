@@ -15,7 +15,6 @@
     "ABOUT_ME_NAME_SECTION": "Sobre mí",
 
     "CV_NAME_LINK": "Descargar CV",
-    "CONTACT_LINK": "Contacto",
     "VISIT_WEBSITE": "Visitar Web",
 
     "INTRO_BASE": "¡Hola! Soy ",
@@ -25,17 +24,17 @@
     "INTRO_NAME_4": "Desarrollador web",
     "INTRO_NAME_5": "Diseñador web",
 
-    "INTRO_DESCRIPTION_1": "<span>Ingeniero de software</span> especializado en <span>aplicaciones web</span> y <span>diseño web</span>.",
+    "INTRO_DESCRIPTION_1": "<span>Ingeniero de software</span> especializado en <span>aplicaciones y diseño web</span>.",
     "INTRO_DESCRIPTION_2": "Me encanta trabajar en proyectos que <span>desafíen mis habilidades</span> y disfruto <span>haciendo sonreír</span> a la gente con mi trabajo.",
 
-    "NOTHING_TITLE": "Rediseño de Nothing Phone",
-    "NOTHING_DESCRIPTION": "Rediseño de la página principal de Nothing Phone. Un diseño minimalista y moderno que refleja la filosofía de la marca.",
+    "PROJECT_1_TITLE": "Rediseño de Nothing Phone",
+    "PROJECT_1_DESCRIPTION": "Rediseño de la página principal de Nothing Phone. Un diseño minimalista y moderno que refleja la filosofía de la marca.",
 
-    "IRECIPE_TITLE": "iRecipe",
-    "IRECIPE_DESCRIPTION": "Proyecto personal sobre la creación de un blog de recetas que contiene las operaciones fundamentales CRUD (Create, Read, Update and Delete) y POO.",
+    "PROJECT_2_TITLE": "iRecipe",
+    "PROJECT_2_DESCRIPTION": "Proyecto personal sobre la creación de un blog de recetas que contiene las operaciones fundamentales CRUD (Create, Read, Update and Delete) y POO..",
 
-    "WEEKLY_GALLERY_TITLE": "Weekly Gallery",
-    "WEEKLY_DESCRIPTION": "Página de Galería simple utilizando HMTL CSS & JS para mostrar una galería semanal de imágenes.",
+    "PROJECT_3_TITLE": "Weekly Gallery",
+    "PROJECT_3_DESCRIPTION": "Página de Galería simple utilizando HMTL CSS & JS para mostrar una galería semanal de imágenes.",
 
     "ABOUT_ME_DESCRIPTION_1": "¡Hola!👋, soy Antonio García Torres, pero también puedes llamarme Toni. Actualmente, estoy en mi tercer año de estudios de <span>informática</span> en la <span>Universidad de Granada</span>.",
     "ABOUT_ME_DESCRIPTION_2": "Tengo una pasión particular por la <span>programación web</span>. Disfruto explorando las últimas tecnologías y tendencias en desarrollo web, y me encanta trabajar en proyectos que <span>desafíen mis habilidades</span> y me permitan crear experiencias en línea interactivas y atractivas.",
