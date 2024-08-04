@@ -21,7 +21,17 @@ const i18n = getI18N({ currentLocale })
                     <span>JavaScript</span>
                 </div>
     
-                <a target="_blank" href="https://nothing-phone-2.vercel.app/">{i18n.VISIT_WEBSITE}</a>
+                <div class="info-links">
+                    <a target="_blank" href={i18n.PROJECT_4_LINK}>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        {i18n.VISIT_WEBSITE}
+                    </a>   
+
+                    <a target="_blank" href={i18n.PROJECT_4_REPOSITORY}>
+                        <i class="fa-brands fa-github"></i>
+                        {i18n.VISIT_GITHUB}
+                    </a>   
+                </div>
             </div>
         </article>
 
@@ -38,7 +48,17 @@ const i18n = getI18N({ currentLocale })
                     <span>CSS</span>
                 </div>
     
-                <a target="_blank" href="https://nothing-phone-2.vercel.app/">{i18n.VISIT_WEBSITE}</a>
+                <div class="info-links">
+                    <a target="_blank" href={i18n.PROJECT_5_LINK}>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        {i18n.VISIT_WEBSITE}
+                    </a>   
+
+                    <a target="_blank" href={i18n.PROJECT_5_REPOSITORY}>
+                        <i class="fa-brands fa-github"></i>
+                        {i18n.VISIT_GITHUB}
+                    </a>   
+                </div>
             </div>
         </article>
 
@@ -55,7 +75,17 @@ const i18n = getI18N({ currentLocale })
                     <span>TailwindCSS</span>
                 </div>
     
-                <a target="_blank" href="https://cine-scope-agt.vercel.app/">{i18n.VISIT_WEBSITE}</a>
+                <div class="info-links">
+                    <a target="_blank" href={i18n.PROJECT_3_LINK}>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        {i18n.VISIT_WEBSITE}
+                    </a>   
+
+                    <a target="_blank" href={i18n.PROJECT_3_REPOSITORY}>
+                        <i class="fa-brands fa-github"></i>
+                        {i18n.VISIT_GITHUB}
+                    </a>   
+                </div>
             </div>
         </article>
 
@@ -73,7 +103,17 @@ const i18n = getI18N({ currentLocale })
                     <span>JavaScript</span>
                 </div>
     
-                <a target="_blank" href="https://nothing-phone-2.vercel.app/">{i18n.VISIT_WEBSITE}</a>
+                <div class="info-links">
+                    <a target="_blank" href={i18n.PROJECT_1_LINK}>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        {i18n.VISIT_WEBSITE}
+                    </a>   
+
+                    <a target="_blank" href={i18n.PROJECT_1_REPOSITORY}>
+                        <i class="fa-brands fa-github"></i>
+                        {i18n.VISIT_GITHUB}
+                    </a>   
+                </div>
             </div>
         </article>
     
@@ -93,7 +133,17 @@ const i18n = getI18N({ currentLocale })
                     <span>Laravel</span>
                 </div>
     
-                <a target="_blank" href="https://irecipe.000webhostapp.com/">{i18n.VISIT_WEBSITE}</a>
+                <div class="info-links">
+                    <a target="_blank" href={i18n.PROJECT_2_LINK}>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        {i18n.VISIT_WEBSITE}
+                    </a>   
+
+                    <a target="_blank" href={i18n.PROJECT_2_REPOSITORY}>
+                        <i class="fa-brands fa-github"></i>
+                        {i18n.VISIT_GITHUB}
+                    </a>   
+                </div>
             </div>
         </article>
     </div>
@@ -203,19 +253,26 @@ const i18n = getI18N({ currentLocale })
         text-align: center;
     }
 
-    .info a{
+    .info-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .info-links a{
         padding: 10px 20px;
         border-radius: 5px;
         color: var(--dark);
         background-color: var(--white);
 
         transition: background-color ease .3s;
-        width: 80%;
         text-align: center;
         margin: 0 auto;
     }
 
-    .info a:hover{
+    .info-links a:hover{
         background-color: var(--tertiary);
     }
 

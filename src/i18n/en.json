@@ -14,8 +14,11 @@
     "SKILLS_NAME_SECTION": "Skills",
     "ABOUT_ME_NAME_SECTION": "About me",
 
+    "CV_LINK": "./CurriculumAGTen.pdf",
+
     "CV_NAME_LINK": "Download CV",
     "VISIT_WEBSITE": "Visit Website",
+    "VISIT_GITHUB": "View on GitHub",
 
     "INTRO_BASE": "Hi! I'm ",
     "INTRO_NAME_1": "Antonio",
@@ -29,18 +32,28 @@
 
     "PROJECT_1_TITLE": "Nothing Phone Redesign",
     "PROJECT_1_DESCRIPTION": "Redesign of the Nothing Phone main page. A minimalist and modern design that reflects the brand's philosophy.",
+    "PROJECT_1_LINK": "https://nothing-phone-2.vercel.app/",
+    "PROJECT_1_REPOSITORY": "https://github.com/Tonips22/Nothing-Phone-2",
 
     "PROJECT_2_TITLE": "iRecipe",
     "PROJECT_2_DESCRIPTION": "Personal project about creating a recipe blog that contains the fundamental CRUD (Create, Read, Update and Delete) operations and OOP.",
+    "PROJECT_2_LINK": "https://irecipe.000webhostapp.com/",
+    "PROJECT_2_REPOSITORY": "https://github.com/Tonips22/iRecipe",
 
     "PROJECT_3_TITLE": "Cine Scope",
     "PROJECT_3_DESCRIPTION": "Movie search page fetching data from IMDB and using React & TailwindCSS.",
+    "PROJECT_3_LINK": "https://cine-scope-agt.vercel.app/",
+    "PROJECT_3_REPOSITORY": "https://github.com/Tonips22/CineScope",
     
     "PROJECT_4_TITLE": "Movimiento Y Vida",
     "PROJECT_4_DESCRIPTION": "Page of a physiotherapy and rehabilitation clinic that shows information about it and the services they offer.",
+    "PROJECT_4_LINK": "https://movimiento-y-vida.vercel.app/",
+    "PROJECT_4_REPOSITORY": "https://github.com/Tonips22/MovimientoYVida",
     
     "PROJECT_5_TITLE": "React Games",
     "PROJECT_5_DESCRIPTION": "Page of simple games made with React and styled with native CSS.",
+    "PROJECT_5_LINK": "https://agt-react-games.vercel.app/",
+    "PROJECT_5_REPOSITORY": "https://github.com/Tonips22/ReactGames",
 
     "ABOUT_ME_DESCRIPTION_1": "Hi!👋, I'm Antonio García Torres, but you can also call me Toni. Currently, I'm in my third year of studying <span>computer science</span> at the <span>University of Granada</span>.",
     "ABOUT_ME_DESCRIPTION_2": "I have a particular passion for <span>web programming</span>. I enjoy exploring the latest technologies and trends in web development, and I love working on projects that <span>challenge my skills</span> and allow me to create interactive and engaging online experiences.",

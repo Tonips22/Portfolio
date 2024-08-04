@@ -14,8 +14,11 @@
     "SKILLS_NAME_SECTION": "Habilidades",
     "ABOUT_ME_NAME_SECTION": "Sobre mí",
 
+    "CV_LINK": "./CurriculumAGT.pdf",
+
     "CV_NAME_LINK": "Descargar CV",
     "VISIT_WEBSITE": "Visitar Web",
+    "VISIT_GITHUB": "Visitar GitHub",
 
     "INTRO_BASE": "¡Hola! Soy ",
     "INTRO_NAME_1": "Antonio",
@@ -29,18 +32,31 @@
 
     "PROJECT_1_TITLE": "Rediseño de Nothing Phone",
     "PROJECT_1_DESCRIPTION": "Rediseño de la página principal de Nothing Phone. Un diseño minimalista y moderno que refleja la filosofía de la marca.",
+    "PROJECT_1_LINK": "https://nothing-phone-2.vercel.app/",
+    "PROJECT_1_REPOSITORY": "https://github.com/Tonips22/Nothing-Phone-2",
 
     "PROJECT_2_TITLE": "iRecipe",
     "PROJECT_2_DESCRIPTION": "Proyecto personal sobre la creación de un blog de recetas que contiene las operaciones fundamentales CRUD (Create, Read, Update and Delete) y POO..",
+    "PROJECT_2_LINK": "https://irecipe.000webhostapp.com/",
+    "PROJECT_2_REPOSITORY": "https://github.com/Tonips22/iRecipe",
+
 
     "PROJECT_3_TITLE": "Cine Scope",
     "PROJECT_3_DESCRIPTION": "Página de búsqueda de películas haciendo fetching de datos de IMDB y usando React & TailwindCSS.",
+    "PROJECT_3_LINK": "https://cine-scope-agt.vercel.app/",
+    "PROJECT_3_REPOSITORY": "https://github.com/Tonips22/CineScope",
+
     
     "PROJECT_4_TITLE": "Movimiento Y Vida",
     "PROJECT_4_DESCRIPTION": "Página de una clíninca de fisioterapia y rahabilitación en la que se muestra información de la misma y los servicios que ofrecen.",
+    "PROJECT_4_LINK": "https://movimiento-y-vida.vercel.app/",
+    "PROJECT_4_REPOSITORY": "https://github.com/Tonips22/MovimientoYVida",
+
 
     "PROJECT_5_TITLE": "React Games",
     "PROJECT_5_DESCRIPTION": "Página de juegos sencillos hechos con React y estilados con CSS nativo.",
+    "PROJECT_5_LINK": "https://agt-react-games.vercel.app/",
+    "PROJECT_5_REPOSITORY": "https://github.com/Tonips22/ReactGames",
 
     "ABOUT_ME_DESCRIPTION_1": "¡Hola!👋, soy Antonio García Torres, pero también puedes llamarme Toni. Actualmente, estoy en mi tercer año de estudios de <span>informática</span> en la <span>Universidad de Granada</span>.",
     "ABOUT_ME_DESCRIPTION_2": "Tengo una pasión particular por la <span>programación web</span>. Disfruto explorando las últimas tecnologías y tendencias en desarrollo web, y me encanta trabajar en proyectos que <span>desafíen mis habilidades</span> y me permitan crear experiencias en línea interactivas y atractivas.",
