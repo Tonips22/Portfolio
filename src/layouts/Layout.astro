@@ -25,6 +25,8 @@ const FONT_AWESOME_ID = import.meta.env.FONT_AWESOME_ID;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 	</head>
+
+	
 	<body>
 		<Header />
 		<slot />
@@ -35,6 +37,15 @@ const FONT_AWESOME_ID = import.meta.env.FONT_AWESOME_ID;
 
 <script src=`https://kit.fontawesome.com/${FONT_AWESOME_ID}.js` crossorigin="anonymous"></script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFLD1XHC89"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GFLD1XHC89');
+</script>
 <style is:global>
 
 	:root {
