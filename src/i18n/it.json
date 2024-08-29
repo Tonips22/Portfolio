@@ -1,0 +1,71 @@
+{
+    "NAME": "Italiano",
+    "NAME_INVERSION_1": "Español",
+    "NAME_INVERSION_2": "English",
+
+    "LANGUAGE": "it",
+    "LANGUAGE_INVERSION_1": "/",
+    "LANGUAGE_INVERSION_2": "en",
+
+    "FLAG": "./bandera-italia.svg",
+    "FLAG_INVERSION_1": "./bandera-espana.svg",
+    "FLAG_INVERSION_2": "./bandera-reino.svg",
+
+    "SEO_DESCRIPTION": "Portfolio personale di Antonio García Torres.",
+
+    "PROJECT_NAME_SECTION": "Progetti",
+    "SKILLS_NAME_SECTION": "Competenze",
+    "ABOUT_ME_NAME_SECTION": "Su di me",
+
+    "CV_LINK": "./CurriculumAGT.pdf",
+
+    "CV_NAME_LINK": "Scarica CV",
+    "VISIT_WEBSITE": "Visita il sito web",
+    "VISIT_GITHUB": "Visita GitHub",
+
+    "INTRO_BASE": "Ciao! Sono ",
+    "INTRO_NAME_1": "Antonio",
+    "INTRO_NAME_2": "TONI",
+    "INTRO_NAME_3": "Ingegnere del software",
+    "INTRO_NAME_4": "Sviluppatore web",
+    "INTRO_NAME_5": "Designer web",
+
+    "INTRO_DESCRIPTION_1": "<span>Ingegnere del software</span> specializzato in <span>sviluppo e design web</span>.",
+    "INTRO_DESCRIPTION_2": "Adoro lavorare su progetti che <span>sfidano le mie competenze</span> e mi piace <span>far sorridere</span> le persone con il mio lavoro.",
+
+    "PROJECT_1_TITLE": "Ridisegno di Nothing Phone",
+    "PROJECT_1_DESCRIPTION": "Ridisegno della pagina principale di Nothing Phone. Un design minimalista e moderno che riflette la filosofia del marchio.",
+    "PROJECT_1_LINK": "https://nothing-phone-2.vercel.app/",
+    "PROJECT_1_REPOSITORY": "https://github.com/Tonips22/Nothing-Phone-2",
+
+    "PROJECT_2_TITLE": "iRecipe",
+    "PROJECT_2_DESCRIPTION": "Progetto personale per la creazione di un blog di ricette che include le operazioni fondamentali CRUD (Create, Read, Update and Delete) e OOP.",
+    "PROJECT_2_LINK": "https://irecipe.000webhostapp.com/",
+    "PROJECT_2_REPOSITORY": "https://github.com/Tonips22/iRecipe",
+
+    "PROJECT_3_TITLE": "Cine Scope",
+    "PROJECT_3_DESCRIPTION": "Pagina di ricerca di film che utilizza il fetching dei dati di IMDB e React & TailwindCSS.",
+    "PROJECT_3_LINK": "https://cine-scope-agt.vercel.app/",
+    "PROJECT_3_REPOSITORY": "https://github.com/Tonips22/CineScope",
+
+    "PROJECT_4_TITLE": "Movimiento Y Vida",
+    "PROJECT_4_DESCRIPTION": "Pagina di una clinica di fisioterapia e riabilitazione che mostra informazioni sulla stessa e i servizi offerti.",
+    "PROJECT_4_LINK": "https://movimiento-y-vida.vercel.app/",
+    "PROJECT_4_REPOSITORY": "https://github.com/Tonips22/MovimientoYVida",
+
+    "PROJECT_5_TITLE": "React Games",
+    "PROJECT_5_DESCRIPTION": "Pagina di giochi semplici realizzati con React e stilizzati con CSS nativo.",
+    "PROJECT_5_LINK": "https://agt-react-games.vercel.app/",
+    "PROJECT_5_REPOSITORY": "https://github.com/Tonips22/ReactGames",
+
+    "ABOUT_ME_DESCRIPTION_1": "Ciao!👋, sono Antonio García Torres, ma puoi anche chiamarmi Toni. Attualmente sono al terzo anno di studi in <span>informatica</span> presso l'<span>Università di Granada</span>.",
+    "ABOUT_ME_DESCRIPTION_2": "Ho una passione particolare per la <span>programmazione web</span>. Mi piace esplorare le ultime tecnologie e tendenze nello sviluppo web, e adoro lavorare su progetti che <span>sfidano le mie competenze</span> e mi permettono di creare esperienze online interattive e coinvolgenti.",
+    "ABOUT_ME_DESCRIPTION_3": "Se dovessi descrivermi, direi che sono una persona <span>realista</span> che <span>ama lo sport</span>. Gioco a calcio, tennis, padel e frequento anche la palestra. Mi considero molto socievole, il che rende facile collaborare con me. Mi piace far sorridere le persone e mi impegno a creare un <span>ambiente di lavoro positivo</span>.",
+    "ABOUT_ME_DESCRIPTION_4": "Inoltre, mi considero <span>motivato, dedicato e ambizioso</span>. Sono appassionato di ciò che scelgo di perseguire e non mi arrendo mai finché non <span>raggiungo i miei obiettivi</span>.",
+
+    "CONTACT_ME_PLACEHOLDER_NAME": "Nome",
+    "CONTACT_ME_PLACEHOLDER_EMAIL": "Email",
+    "CONTACT_ME_PLACEHOLDER_SUBJECT": "Oggetto",
+    "CONTACT_ME_PLACEHOLDER_MESSAGE": "Il tuo messaggio",
+    "CONTACT_ME_BUTTON": "Invia"
+}

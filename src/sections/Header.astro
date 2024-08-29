@@ -20,9 +20,14 @@ const i18n = getI18N({ currentLocale })
 
             <ul>
                 <li>
-                    <a class="second-language" href=`${i18n.LANGUAGE_INVERSION}`>
-                        <img src={i18n.FLAG_INVERSION} alt=`flag ${i18n.NAME_INVERSION}`>
-                        {i18n.NAME_INVERSION}
+                    <a class="second-language" href=`${i18n.LANGUAGE_INVERSION_1}`>
+                        <img src={i18n.FLAG_INVERSION_1} alt=`flag ${i18n.NAME_INVERSION_1}`>
+                        {i18n.NAME_INVERSION_1}
+                    </a>
+
+                    <a class="second-language" href=`${i18n.LANGUAGE_INVERSION_2}`>
+                        <img src={i18n.FLAG_INVERSION_2} alt=`flag ${i18n.NAME_INVERSION_2}`>
+                        {i18n.NAME_INVERSION_2}
                     </a>
                 </li>
             </ul>
@@ -192,25 +197,29 @@ const i18n = getI18N({ currentLocale })
     .languages{
         position: relative;
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        display: inline-block;
+        cursor: pointer;
     }
 
     .languages ul{
-        position: absolute;
-
-        bottom: -50px;
-        width: 100%;
-        padding-top: 50px;
-
         display: none;
+        position: absolute;
+        z-index: 990;
+        width: 100%;
+        padding-top: 10px;
+
     }
 
     .languages:hover ul{
         display: block;
         z-index: -1;
+    }
+
+    .languages ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
     }
 
 

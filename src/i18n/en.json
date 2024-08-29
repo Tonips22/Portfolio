@@ -1,12 +1,15 @@
 {
     "NAME": "English",
-    "NAME_INVERSION": "Español",
+    "NAME_INVERSION_1": "Español",
+    "NAME_INVERSION_2": "Italiano",
 
     "LANGUAGE": "en",
-    "LANGUAGE_INVERSION": "/",
+    "LANGUAGE_INVERSION_1": "/",
+    "LANGUAGE_INVERSION_2": "it",
 
     "FLAG": "./bandera-reino.svg",
-    "FLAG_INVERSION": "./bandera-espana.svg",
+    "FLAG_INVERSION_1": "./bandera-espana.svg",
+    "FLAG_INVERSION_2": "./bandera-italia.svg",
 
     "SEO_DESCRIPTION": "Antonio García Torres's personal portfolio.",
 
