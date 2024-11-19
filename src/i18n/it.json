@@ -38,11 +38,6 @@
     "PROJECT_1_LINK": "https://nothing-phone-2.vercel.app/",
     "PROJECT_1_REPOSITORY": "https://github.com/Tonips22/Nothing-Phone-2",
 
-    "PROJECT_2_TITLE": "iRecipe",
-    "PROJECT_2_DESCRIPTION": "Progetto personale per la creazione di un blog di ricette che include le operazioni fondamentali CRUD (Create, Read, Update and Delete) e OOP.",
-    "PROJECT_2_LINK": "https://irecipe.000webhostapp.com/",
-    "PROJECT_2_REPOSITORY": "https://github.com/Tonips22/iRecipe",
-
     "PROJECT_3_TITLE": "Cine Scope",
     "PROJECT_3_DESCRIPTION": "Pagina di ricerca di film che utilizza il fetching dei dati di IMDB e React & TailwindCSS.",
     "PROJECT_3_LINK": "https://cine-scope-agt.vercel.app/",
